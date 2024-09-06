@@ -1,0 +1,449 @@
+
+
+
+
+#container{
+    position: relative;
+    background-size: contain;
+}
+.inner{
+    background: url("https://web-resource.gentlemonster.com/assets/stories/24-optical/ai-student-id/img/end/bg_intro_pc.jpg") center;
+    z-index: -2;
+
+}
+.sc-motion .motion-wrapper{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+}
+.sc-motion .motion-wrapper video{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+}
+
+.sc-text-scroll{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 5vw;
+}
+.sc-text-scroll h2{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 7vw;
+    text-align: center;
+    color: #790230;
+    
+}
+.sc-text-scroll .text-group{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    font-size: 3.3vw;
+    line-height: 1;
+    font-weight: 700;
+    margin: 0 0 20px 0;
+    color: rgb(153, 153, 153);
+    
+}
+.sc-text-scroll .txt{
+    position: relative;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-size: 0%;
+    transition: background-size 0.3s ease;
+}
+.sc-text-scroll .about-link{
+    background-color: rgba(255,255,255,0);
+    color: #790230;
+    border: 1px solid #790230;
+    padding: 0 50px;
+    font-size: 14px;
+    line-height: 48px;
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: 2px;
+    border-radius: 50PX;
+}
+.sc-text-scroll .about-link:hover{
+    background: #790230;
+    color: #fff;
+}
+
+.model-group{
+    width: calc(100% + 10px);
+    margin: 90px 0 100px -10px;
+}
+.model-group .model-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.model-group .model-item{
+    width: calc(12.5% - 10px);
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+
+.sc-card{
+    height: 700vh;
+    position: relative;
+}
+.sc-card .sticky{
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    overflow: hidden;
+}
+.sc-card .card-list{
+    padding-bottom: 200px;
+    width: max-content;
+    height: 100%;
+    display: flex;
+}
+.sc-card .card-item{
+    flex-shrink: 0;
+    position: relative;
+    width: 375px;
+    height: 666px;
+    box-shadow: 0px 3px 10px -3px #6c6c6c;
+    margin-right: 10px;
+
+}
+.sc-card .card-item img{
+    width: 100%;
+}
+
+
+
+.sc-collection{
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+
+    
+
+}
+.sc-collection .visual-slide{
+    height: 48.906vw;
+    overflow: hidden;
+    pointer-events: none;
+    position: relative;
+}
+.sc-collection .swiper-wrapper{
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.sc-collection .swiper-slide{
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    height: 100%;
+    position: relative;
+}
+.sc-collection .swiper-slide img{
+   width: 100%;
+   height: 100%;
+}
+.sc-collection .intro-txt{
+    position: absolute;
+    top: 18.427vw;
+    left: 20.156vw;
+}
+.sc-collection .intro-txt h2{
+    font-size: 4.583vw;
+    display: inline-block;
+    width: auto;
+    text-align: center;
+    line-height: .933;
+    letter-spacing: -0.888px;
+    color: #343434;
+}
+.sc-collection .intro-txt .desc-box{
+    display: flex;
+    justify-content: center;
+    margin: 26px 0 0;
+}
+.sc-collection .intro-txt .desc{
+    width: 474px;
+    font-weight: 400;
+    font-size: .833vw;
+    text-align: center;
+    color: #343434;
+}
+
+
+
+
+
+.sc-video{
+    margin: 100px 0 200px 0;
+}
+.sc-video .title-group{
+    font-size: 35px;
+    margin: 6.77vw 0 2.864vw;
+    text-align: center;
+    line-height: 1;
+}
+.sc-video .video-list{
+    display: flex;
+    margin-top: 50px;
+}
+.sc-video .video-item{
+    position: relative;
+    flex: 1;
+}
+.sc-video .video-item:hover .overlay{
+    opacity: 1;
+    visibility: visible;
+}
+.sc-video .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, .7);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sc-video .overlay span{
+    font-size: 34px;
+    text-shadow: rgb(0 0 0) 0.05px 0.05px 0;
+}
+
+
+
+
+.sc-view{
+    position: relative;
+    height: 500vh;
+    padding: 0 0 100px 30px;
+}
+.sc-view .view-wrapper{
+    position: sticky;
+    top: 0;
+    height: 100vh;
+}
+.sc-view .view-group{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    --imgSize: 24vw;
+    --imgPadding: 30px;
+    gap: 20px;
+    display: grid;
+    grid-template-rows:repeat(2,1fr);
+    grid-template-columns: repeat(2,1fr);
+    padding-right: 20px;
+}
+.sc-view .title-group{
+    font-size: 35px;
+    margin: 6.77vw 0 2.864vw;
+    text-align: center;
+    line-height: 1;
+}
+.sc-view .title-group .title{
+    padding: 40px 0;
+}
+.sc-view .title-group .img-group{
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sc-view .view-group div{
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.sc-view .view-group div img{
+    position: absolute;
+    width: 100%;
+}
+
+.sc-view .thumb img {
+    height: 100%;
+}
+
+
+
+.sc-school{
+    margin-top: 6.718vw;
+}
+.sc-school .sticky{
+    height: 100vh;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+}
+.sc-school .sticky .sticky-wrapper{
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    min-height: 588px;
+    background-image: linear-gradient(rgb(255, 255, 255) 5%, rgba(255, 255, 255, 0) 45%, rgba(255, 255, 255, 0) 65%, rgb(255, 255, 255) 95%),url("https://web-resource.gentlemonster.com/assets/stories/24-optical/collection/pc/bg_school.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+}
+.sc-school .sticky .sticky-wrapper .symbol{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: max(73px,12.414vh);
+    width: 100%;
+}
+.sc-school .sticky .sticky-wrapper .symbol svg{
+    width: max(48px,8.163vh);
+    height: auto;
+}
+.sc-school .title-group{
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    position: absolute;
+    top: max(146px,24.829vh);
+    width: 100%;
+    color: #fff;
+    text-shadow: 3px 3px #000;
+    text-align: center;
+}
+.sc-school .title-group .txt1{
+    font-weight: 500;
+    font-size: max(8px,1.36vh);
+    text-shadow: 1px 1px #000;
+    letter-spacing: 1px;
+}
+.sc-school .title-group .txt2{
+    font-size: max(40.5px,6.887vh);
+    line-height: .844;
+}
+.sc-school .principal{
+    position: absolute;
+    top: max(58px,9.863vh);
+    left: 50%;
+    width: max(140px,23.809vh);
+    margin-left: 24.404vh;
+}
+.sc-school .chat-group{
+    position: absolute;
+    top: calc(84.523vh - 202px);
+    left: 50%;
+    width: 509px;
+    height: 202px;
+    margin-left: -254.5px;
+    padding: 32px 35px;
+    box-shadow: 2px 2px 4px 0 rgba(0,0,0,.25);
+    background: #fff;
+    border: 1px solid #000;
+}
+.sc-school .chat-group::after{
+    content: "";
+    position: absolute;
+    bottom: 17px;
+    left: 50%;
+    width: 7px;
+    height: 7px;
+    margin-left: -5px;
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.sc-school .chat-group p{
+    font-size: 15px;
+    line-height: 1.4;
+    margin-bottom: 15px;
+    color: #343434;
+
+}
+
+
+@media (min-width: 768px) and (max-width: 1279px) {
+    .sc-motion .motion-wrapper{
+        height: 80vh;
+    }
+    .sc-collection{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .sc-collection .visual-slide{
+        width: 100%;
+        height: 96.223vw;
+        margin-top: -11.784vw;
+    }
+    .sc-collection .intro-txt{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: static;
+        margin-top: 13.671vw;
+        width: 100%;
+        text-align: center;
+    }
+    .sc-collection .intro-txt h2{
+        font-size: 88px;
+    }
+    .sc-collection .intro-txt .desc-box .desc{
+        position: static;
+        width: 474px;
+        margin-top: 4.557vw;
+        text-align: center;
+        line-height: 1.533;
+        font-size: 15px;
+    }
+}
+@media (max-width: 767px){
+    .sc-collection .visual-slide{
+        width: 172vw;
+        height: 192vw;
+        margin-left: -36vw;
+    }
+    .sc-collection .intro-txt{
+        position: static;
+    }
+    .sc-collection .intro-txt h2{
+        font-size: 45px;
+        position: absolute;
+        top: 23.466vw;
+        left: 0;
+        width: 100%;
+
+    }
+    .sc-collection .intro-txt .desc-box .desc{
+        font-size: 12px;
+        line-height: 1.5;
+        position: static;
+        width: auto;
+        margin: 8vw 10.933vw;
+    }
+    .sc-video .title-group{
+        font-size: 21px;
+    }
+    .sc-view .title-group .title{
+        font-size: 21px;
+    }
+
+}
+@media (max-width: 1024px) {
+    .model-group .model-item{
+        width: calc(25% - 10px);
+    }
+}
+
